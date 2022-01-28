@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+:root {
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  --dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+  --padding-lg: 1.5rem;
+  --m-lg: 2.5rem;
+}
+
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+header,
+nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+main {
+  text-align: center;
+}
+
+/* ----------- HEADER -------------  */
+header {
+  padding: var(--padding-lg);
+}
+
+header nav .brand img {
+  aspect-ratio: preserve;
+  width: 75px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 1.2rem;
+  font-size: 0.75rem;
+}
+
+header nav .nav-links ul li a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+/* ----------- HERO -------------  */
+
+.hero {
+  padding: var(--padding-lg);
+  margin-top: var(--m-lg);
+}
+
+.hero .hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .main-heading {
+  margin-top: var(--m-lg);
+  color: var(--dark-blue);
+}
+
+.hero .sub-heading {
+  padding-inline: var(--padding-lg);
+  font-size: 0.85rem;
+}
+
+.hero form > * {
+  display: block;
+  width: 100%;
+}
