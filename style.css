@@ -13,6 +13,11 @@
   --light-gray: hsl(0, 0%, 75%);
   --padding-lg: 1.5rem;
   --m-lg: 2.5rem;
+  --m-md: 1.5rem;
+  --m-sm: 1rem;
+  --p-lg: 2.5rem;
+  --p-md: 1.5rem;
+  --p-sm: 0.75rem;
 }
 
 html,
@@ -96,7 +101,71 @@ header nav .nav-links ul li a {
   font-size: 0.85rem;
 }
 
+.hero form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--m-sm);
+  margin-top: var(--m-md);
+  margin-bottom: var(--m-lg);
+  padding: 0 var(--p-sm);
+}
+
 .hero form > * {
-  display: block;
-  width: 100%;
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.hero form input {
+  border: 1px solid var(--desaturated-blue);
+}
+
+.hero form input::placeholder {
+  color: var(--light-gray);
+}
+
+.hero form button {
+  background-color: var(--bright-blue);
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+}
+
+/* ----------- STAY PRODUCTIVE -------------  */
+
+#curvedSvg {
+  margin-top: var(--m-lg);
+}
+
+.productive {
+  background-color: var(--light-blue);
+  margin-bottom: var(--m-lg);
+}
+
+.productive > img {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: var(--m-lg);
+}
+
+.productive .blurb {
+  margin-top: var(--m-lg);
+  padding-top: var(--p-md);
+}
+
+.productive .blurb h2 {
+  color: var(--dark-blue);
+  font-size: 1rem;
+  margin-top: var(--m-lg);
+  margin-bottom: var(--m-md);
+}
+
+.productive .blurb p {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0 var(--p-md);
 }
