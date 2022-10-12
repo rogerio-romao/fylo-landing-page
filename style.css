@@ -346,3 +346,10 @@ footer .email {
     align-items: center;
     gap: var(--p-sm);
 }
+
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: var(--p-lg);
+    margin-top: var(--m-lg);
+}
